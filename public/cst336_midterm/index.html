@@ -8,7 +8,38 @@
         <link  href="css/styles.css" rel="stylesheet">
     </head>
     <body>
-        <h1></h1>
+        <div class="container">
+            <!--query-->
+            <div class="jumbotron" id="query">
+                <h1>Open Library</h1>
+                <p>Please enter the ISBN of the book you'd like to retrieve</p>
+                <form>
+                    <div class="form-group row">
+                        <label for="isbn" class="col-sm-2 col-form-label">ISBN </label>
+                        <div class="col-sm-4">
+                            <input type="text" name="isbn" id="isbn">
+                        </div>
+                        <div class="col-sm-6">
+                            <button class="btn btn-primary" id="queryButton">Query</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <!--result-->
+            <div id="result">
+                <div id="cover-img" class="col-sm-3 cover">
+                </div>
+                <div class="col-sm-6 info">
+                    <span id="title"></span>
+                    <span id="author"></span>
+                    <span id="publish-year"></span>
+                    <span id="publisher"></span>
+                    <span id="isbn-print"></span>
+                    <span id="pages"></span>
+                </div>
+            </div>
+        </div>
         <script src="js/functions.js"></script>
     </body>
 </html>
